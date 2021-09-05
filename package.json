@@ -1,0 +1,16 @@
+{
+  "name": "cards_project",
+  "version": "1.0.0",
+  "description": "Main page contains a form  for the following information: -Greeting -Type of event (selected from a few) -Message -Submit button On submission, the form should be hidden and a card should be shown in place.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
