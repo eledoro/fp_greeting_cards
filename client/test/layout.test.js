@@ -13,6 +13,7 @@
 
 
         form=document.querySelector('form');
+        header = document.querySelector('h1');
         greetingInput = document.querySelector('#greeting');
         eventInput = document.querySelector('#event');
         messageInput = document.querySelector('#message');
@@ -22,7 +23,7 @@
     })
     // test mainPage layout exists
      test('header exists', ()=>{
-         header = querySelector('h1');
+        
          expect(header).toBeTruthy();
      })    
        test('form exists', ()=>{
