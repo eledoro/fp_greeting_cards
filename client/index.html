@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeting cards</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
 </head>
 
 
 <body>
-   <div class="container">
+   <div id="mainForm" class="container">
        <h1> Create your own greeting card</h1>
        <img src="https://picsum.photos/200" alt="">
 
@@ -19,12 +20,12 @@
            <div class="input-fields">
            
            <input id="greeting" name="greeting" placeholder="greeting" type="text">
-           <select name="event" id="event">
-               <option value="Birthday">Birthday</option>
-               <option value="Wedding">Wedding</option>
-               <option value="Get Well">Get Well</option>
-            </select>
-            
+           <select id="event">
+            <option value="birthday">Birthday</option>
+            <option value="wedding">Wedding</option>
+            <option value="getWell">Get Well</option>
+            <option value="christmas">Christmas</option>
+          </select>
             
             <textarea id="message" name="message" placeholder="message"></textarea>
 
@@ -34,8 +35,15 @@
                 <input class="controlBtns"id="reset" type="reset" id="reset" value="reset">
             </div>
         </form>
+
+
         
     </div> 
+    <div class="card">
+        <h1 id="cardEvent"></h1>
+        <h2 id="cardGreeting"> </h2>
+        <p id="cardMessage">Lorem ipsum ectetur adipisicing elit. Iure, iste. Tempora dolor</p>
+     </div>
 </body>
 
 </html>
