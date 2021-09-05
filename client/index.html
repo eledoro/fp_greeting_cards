@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeting cards</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
-<h1> Create your own greeting card</h1>
-<form action="">
-    <input id="greeting" name="greeting" placeholder="greeting" type="text">
-<select name="event" id="event">
-    <option value="Birthday">Birthday</option>
-    <option value="Wedding">Wedding</option>
-    <option value="Get Well">Get Well</option>
+   <div class="container">
+       <h1> Create your own greeting card</h1>
+       <img src="https://picsum.photos/200" alt="">
 
-</select>
+       <form action="">
+           <div class="input-fields">
+           
+           <input id="greeting" name="greeting" placeholder="greeting" type="text">
+           <select name="event" id="event">
+               <option value="Birthday">Birthday</option>
+               <option value="Wedding">Wedding</option>
+               <option value="Get Well">Get Well</option>
+            </select>
+            
+            
+            <textarea id="message" name="message" placeholder="message"></textarea>
 
-
-    <textarea id="message" name="message" placeholder="message"></textarea>
-   <input  id="submit" type="submit" id="submit" value="submit">
-   <input id="reset" type="reset" id="reset" value="reset">
-</form>
-    
+            </div>
+            <div class="btn-group">
+                <input class="controlBtns"id="submit" type="submit" id="submit" value="submit">
+                <input class="controlBtns"id="reset" type="reset" id="reset" value="reset">
+            </div>
+        </form>
+        
+    </div> 
 </body>
+
 </html>
