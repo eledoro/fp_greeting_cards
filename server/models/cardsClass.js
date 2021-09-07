@@ -23,6 +23,18 @@ class Card {
         }
     }
 
+    static filterById(id) {
+        try {
+            const cardsData = cardsData.filter((card) => card.id === id);
+            const card = new Card(cardsData);
+            return card;
+        } catch (err) {
+            throw new Error('There is no card with this id!');
+        }
+    }
+
+
+
     static addNewCard(card){
         const newCardId=cardsData.length +1;
         const newCard = new Card({id:newCardId, ...card});
