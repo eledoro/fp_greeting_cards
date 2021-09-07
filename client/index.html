@@ -19,20 +19,30 @@
        <form action="">
            <div class="input-fields">
            
-           <input id="greeting" name="greeting" placeholder="greeting" type="text">
+            <label for="greeting">Add your greeting</label>
+           <input id="greeting" name="greeting" placeholder="Type your greeting" type="text">
+           <label for="event">Choose an event</label>
            <select id="event">
             <option value="birthday">Birthday</option>
             <option value="wedding">Wedding</option>
             <option value="getWell">Get Well</option>
             <option value="christmas">Christmas</option>
           </select>
-            
-            <textarea id="message" name="message" placeholder="message"></textarea>
+            <label for="message">Add your message</label>
+            <textarea id="message" name="message" placeholder="Type your message"></textarea>
 
             </div>
             <div class="btn-group">
-                <input class="controlBtns"id="submit" type="submit" id="submit" value="submit">
-                <input class="controlBtns"id="reset" type="reset" id="reset" value="reset">
+                <input class="controlBtns"id="submit" type="submit"  value="submit">
+                <input class="controlBtns"id="reset" type="reset"  value="reset">
+
+                <select id="seeSaved">
+                    <option value="all">All</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="getWell">Get Well</option>
+                    <option value="christmas">Christmas</option>
+                  </select>
             </div>
         </form>
 
@@ -43,7 +53,9 @@
         <h1 id="cardEvent"></h1>
         <h2 id="cardGreeting"> </h2>
         <p id="cardMessage">Lorem ipsum ectetur adipisicing elit. Iure, iste. Tempora dolor</p>
-     </div>
+    </div>
+    <input class="controlBtns" id="saveCurrentCard" type="save" value="reset">
+    <section class="cardSection"></section>
 </body>
 
 </html>
